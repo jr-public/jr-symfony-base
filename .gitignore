@@ -1,0 +1,35 @@
+### Symfony ###
+/var/
+/vendor/
+/public/bundles/
+/public/build/
+/.env.local
+/.env.*.local
+/.phpunit.result.cache
+.phpunit.cache/
+
+### Composer ###
+composer.phar
+
+### Logs ###
+*.log
+
+### Docker ###
+docker-compose.override.yml
+
+### IDE ###
+.idea/
+.vscode/
+*.swp
+*.swo
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Node (si usás assets) ###
+/node_modules/
+/public/assets/
+
+### JR ###
+/reference/

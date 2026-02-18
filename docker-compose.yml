@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: symfony_app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/var
+    restart: unless-stopped
