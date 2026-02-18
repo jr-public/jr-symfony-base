@@ -1,21 +1,23 @@
-### Symfony ###
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
 /var/
 /vendor/
-/public/bundles/
-/public/build/
-/.env.local
-/.env.*.local
-/.phpunit.result.cache
-.phpunit.cache/
+###< symfony/framework-bundle ###
 
-### Composer ###
-composer.phar
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
 
-### Logs ###
-*.log
-
-### Docker ###
-docker-compose.override.yml
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor/
+###< symfony/asset-mapper ###
 
 ### IDE ###
 .idea/
@@ -26,10 +28,6 @@ docker-compose.override.yml
 ### OS ###
 .DS_Store
 Thumbs.db
-
-### Node (si usás assets) ###
-/node_modules/
-/public/assets/
 
 ### JR ###
 /reference/
